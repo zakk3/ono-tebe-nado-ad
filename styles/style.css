@@ -1,1 +1,342 @@
-/* место для вашего кода */
+/* style.css */
+h1 {
+  font-size: 100px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 115px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact-info {
+  justify-self: left;
+  line-height: 1.3;
+  padding-right: 56px;
+  font-style: normal;
+}
+
+.header-contact {
+  justify-self: right;
+}
+
+.contact-details {
+  max-width: 210px;
+  width: 100%;
+  text-underline-offset: 17%;
+}
+
+.dark-overlay {
+  position: absolute;
+  opacity: 60%;
+  z-index: 1;
+  background-color: #000;
+  inset: 0;
+}
+
+.page-header {
+  display: grid;
+  grid-template-columns: 1fr 130px 1fr;
+  grid-template-rows: 105px;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #fff;
+  padding: 93px 22px 96px 19px;
+}
+
+.navigation-menu {
+  justify-self: left;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: circle;
+  gap: 34px;
+  margin-left: 33px;
+  margin-top: 6px;
+}
+
+.nav-item:first-of-type {
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: underline;
+  text-underline-offset: 8%;
+}
+
+.active-nav-link {
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 136px;
+}
+
+.hero-section {
+  position: relative;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  z-index: 0;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+}
+
+.main-heading {
+  position: relative;
+  display: block;
+  z-index: 2;
+  padding: 162px 49px 116px 53px;
+  line-height: 115px;
+  letter-spacing: 0.3em;
+}
+
+.extra-spacing {
+  letter-spacing: 0.6em;
+}
+
+.no-spacing {
+  letter-spacing: 0em;
+}
+
+.text-line {
+  position: relative;
+  display: block;
+  padding-bottom: 20px;
+  width: 100%;
+  z-index: 2;
+}
+
+.centered-text {
+  text-align: center;
+  line-height: 100px;
+}
+
+.right-aligned-text {
+  text-align: right;
+  line-height: 100px;
+}
+
+.hero-description {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 305px;
+  grid-template-rows: 53px;
+  z-index: 1;
+}
+
+.hero-text {
+  word-spacing: 18px;
+  font-size: 22px;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.place-bet-btn {
+  font-family: Raleway, sans-serif;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 15px 33px 13px 30px;
+  font-size: 22px;
+  margin-right: auto;
+  text-transform: uppercase;
+}
+
+.auction-lots {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  gap: 25px;
+  padding: 186px 26px 0px 24px;
+}
+
+.section-title {
+  text-transform: uppercase;
+  padding-left: 38px;
+}
+
+.lots-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  list-style: none;
+  gap: 26px;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.lot-item {
+  display: flex;
+  flex-grow: 1;
+}
+
+.lot-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+
+.lot-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  z-index: 0;
+  padding: 54px 37px 48px 40px;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  background-position: center;
+  background-size: cover;
+  min-height: 563px;
+}
+
+.film-lot {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.book-lot {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.art-lot {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.lot-name {
+  text-decoration: underline;
+  z-index: 2;
+  justify-content: space-between;
+  align-self: flex-start;
+  align-content: flex-start;
+}
+
+.lot-description {
+  display: block;
+  font-size: 20px;
+  z-index: 2;
+  align-self: flex-end;
+  align-content: flex-end;
+  justify-content: end;
+  justify-self: end;
+  margin-top: auto;
+  line-height: 1.2;
+}
+
+.more-lots-link {
+  font-size: 20px;
+  font-weight: 400;
+  text-underline-offset: 10%;
+  text-decoration: underline;
+  padding-left: 38px;
+  padding-top: 2px;
+}
+
+.auction-info {
+  display: block;
+  background-color: #fff;
+  padding: 181px 2px 0 42px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 240px 350px;
+  grid-template-areas:
+    'logo-container info-title'
+    '. info-content';
+}
+
+.logo-container {
+  display: flex;
+  grid-area: logo-container;
+  justify-self: center;
+}
+
+.white-logo {
+  display: flex;
+  position: relative;
+  width: 240px;
+  border-radius: 50%;
+  background-color: #000;
+  justify-content: center;
+  justify-self: center;
+}
+
+.white-logo-img {
+  width: 147px;
+  align-self: center;
+}
+
+.info-title {
+  display: flex;
+  grid-area: info-title;
+  align-self: center;
+  margin-left: 40px;
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  grid-area: info-content;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 3px 21px 0 42px;
+  line-height: 1.2;
+  word-spacing: 1px;
+}
+
+.page-footer {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 148px 49px 88px 52px;
+}
+
+.footer-navigation {
+  justify-self: center;
+  text-align: center;
+}
+
+.footer-nav-links {
+  list-style: none;
+}
+
+.footer-nav-link {
+  text-decoration: underline;
+}
+
+.active-footer-link {
+  text-decoration: none;
+}
+
+.social-media-links {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+  justify-self: end;
+}
+
+.social-icon {
+  height: 48px;
+  width: 48px;
+}
